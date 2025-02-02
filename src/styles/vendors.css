@@ -1,0 +1,45 @@
+.store_header{
+    margin-left: 45%;
+    font-size: 300%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.store_banner_right{
+    margin-left: 60%;
+
+}
+.store_banner{
+    border: none;
+    width:80%;
+    height: 20%;
+    margin-left: 10%;
+    font-family: sans-serif;
+    background-color: aliceblue;
+    justify-content: space-between; 
+    padding: 2%;  
+}
+.filter{
+    padding:3%;
+    width: 30%;
+    color:white;
+    font-size: 100%;
+    background-color:blue;
+    border-radius: 5%;
+    border: none;
+   
+}
+
+.sort-dropdown{
+    padding:4%;
+    width: 35%;
+    color:white;
+    background-color:blue;
+    border-radius: 5%;
+    border: none;
+    
+}
+.banner_icons{
+  color:black;
+  font-size: 125%;
+  margin-left: 5%;
+}

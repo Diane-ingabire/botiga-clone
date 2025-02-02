@@ -1,0 +1,108 @@
+.shop-header {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    background-image: url("../assets/shop1img.webp"); 
+    background-size: cover;
+    background-position: center;
+    font-weight: 700;
+
+    margin-bottom: 5%;
+  }
+  
+  .shop-text {
+    position: absolute;
+    top: 50%;
+    margin-left: 10%;
+    transform: translateY(-50%);
+    color: black; 
+    font-size: 400%; 
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  .shop-content{
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 20px;
+   
+  }
+  .left-shop-content {
+    flex: 1;
+    margin-left: 80px;
+    max-width: 30%;
+    list-style-type: none; 
+    padding: 0;
+   
+  }
+ .left-shop-content ul{
+    list-style-type: none;
+   
+ }
+ h3{
+  margin-bottom: 8%;
+  margin-top: 10%;
+ }
+ .Rating{
+  margin-bottom: 10%;
+ }
+ .left-shop-content li{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+ 
+  
+ }
+.list4_textbox{
+  display: flex;
+  gap: 50%;
+  
+  
+}
+.list4_textbox1, .list4_textbox2{
+  width: 20%;
+  height: 30px;
+  padding: 2%;
+}
+
+.right-shop-content{
+  flex: 2; /* Adjust size ratio */
+  max-width: 60%; 
+  margin-right: 10%;
+  margin-left: 5%;
+  
+}
+.right-shop-content-top{
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  
+}
+.select-box{
+  flex: 1;
+  margin-left: 30%;
+  max-width: 30%;
+  padding: 10px;
+  height: 40%;
+  margin-bottom: 3%;
+}
+.shop_item img{
+  width: 250px;
+ 
+}
+.shop_items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 columns per row */
+  gap: 20px; 
+  padding: 2%;
+  margin-left: -4%;
+ 
+}
+
+.shop_item {
+  padding: 15px;
+  border-radius: 8px;
+}
+.shop_last_icon{
+  font-size: 180%;
+  margin-left: 50%;
+}

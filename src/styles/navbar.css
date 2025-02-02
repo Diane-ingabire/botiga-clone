@@ -1,0 +1,141 @@
+/* General Navbar Styling */
+.navbar {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Search Section */
+  .search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .category-select {
+    padding: 8px;
+    border: none;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .search-input {
+    padding: 8px;
+    border: none;
+  
+    width: 200px;
+  }
+  
+  .search-button {
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  /* Icons Section */
+  .icons-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .icon {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .icon:hover {
+    color: #007bff;
+  }
+  
+  /* Cart and Wishlist */
+  .cart-container, .wishlist-container {
+    position: relative;
+  }
+  
+  .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 5px;
+  }
+  
+  /* Phone Number */
+  .phone-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color:white;
+  }
+  
+  .phone-number {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Bottom Menu Bar */
+  .menu-bar {
+    background-color: #5a54f4;
+    padding: 20px;
+    margin-top: 40px;
+    width:100%;
+  }
+  
+  .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .trending {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .menu-links {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+  }
+  
+  .menu-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .menu-links a:hover {
+    text-decoration: underline;
+  }
+  

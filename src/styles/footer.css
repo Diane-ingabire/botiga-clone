@@ -1,0 +1,124 @@
+/* Footer container */
+.footer {
+    background-color: #111; /* Dark background */
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+  
+  }
+  
+  /* Top section with Newsletter and Contact info */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  /* Newsletter section */
+  .newsletter {
+    max-width: 50%;
+    margin-left:50px;
+  }
+  
+  .newsletter h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-input {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+  }
+  
+  .newsletter-input input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .newsletter-input button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Contact section */
+  .contact-info {
+    text-align: right;
+    max-width: 40%;
+  }
+  
+  .contact-info h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .social-icons i {
+    cursor: pointer;
+  }
+  
+  /* Footer links */
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: left;
+    padding-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .footer-links h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  /* Payment icons */
+  .payment-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+.payment-icons img{
+  max-width:200px;
+  height:auto;
+}
+  

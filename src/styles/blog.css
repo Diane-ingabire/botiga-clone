@@ -1,0 +1,35 @@
+.blog-list {
+    text-align: left;
+    padding: 20px;
+  }
+  
+.blog-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right:10%;
+    margin-top: 5%;
+  }
+  
+  .blog-card {
+    width: 300px;
+    text-align: left;
+  }
+  
+  .blog-image {
+    width: 120%;
+    
+  }
+  
+  .blog-date {
+    color: darkslategrey;
+    font-size: 14px;
+  }
+  
+  .read-more {
+    color: darkslategrey;
+    font-weight: bold;
+    
+  }
+  

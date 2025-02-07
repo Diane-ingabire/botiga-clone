@@ -22,7 +22,7 @@
 }
 .filter{
     padding:3%;
-    width: 30%;
+    width: 25%;
     color:white;
     font-size: 100%;
     background-color:blue;
@@ -34,12 +34,14 @@
 .sort-dropdown{
     padding:4%;
     width: 35%;
-    color:white;
-    background-color:blue;
+    color:rgb(13, 13, 13);
+    background-color: white;
     border-radius: 5%;
-    border: none;
+    border: 0.5px solid gainsboro;
     
 }
+
+
 .banner_icons{
   color:black;
   font-size: 125%;

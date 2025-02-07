@@ -16,7 +16,7 @@ import elevenimg from "../assets/elevenimg.webp";
 import twelveimg from "../assets/twelveimg.webp";
 import thirteenimg from "../assets/thirteenimg.webp";
 import fourteenimg from "../assets/fourteenimg.webp";
-import " /vercel/path0/src/components/Singlecard.jsx";
+
 
 import { FaStar, FaCircle } from "react-icons/fa";
 import { IoIosArrowDroprightCircle } from "react-icons/io";

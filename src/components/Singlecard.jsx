@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { products } from "./Home";
-import "../styles/Singlecard.css"
+import "../styles/singlecard.css"
 
 function Singlecard() {
     const { id } = useParams();

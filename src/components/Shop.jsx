@@ -131,6 +131,7 @@ const Shop = () => {
             
             </div>
             <div className="shop_last_icon">
+              <h3>Price</h3>
             <Bs1CircleFill />  <Bs2CircleFill /> <BsArrowRight />
             </div>
 

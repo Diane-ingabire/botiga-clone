@@ -1,9 +1,9 @@
-/* General Navbar Styling */
+
 .navbar {
     width: 100%;
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
+    padding-top: 3%;
     font-family: Arial, sans-serif;
 
   }
@@ -13,17 +13,17 @@
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
-    margin: auto;
+  
   }
   
-  /* Logo */
   .logo {
     font-size: 24px;
     font-weight: bold;
     color: black;
+    margin-left: 30%;
+   
   }
   
-  /* Search Section */
   .search-container {
     display: flex;
     align-items: center;
@@ -72,7 +72,7 @@
     color: #007bff;
   }
   
-  /* Cart and Wishlist */
+
   .cart-container, .wishlist-container {
     position: relative;
   }
@@ -107,6 +107,8 @@
     padding: 20px;
     margin-top: 40px;
     width:100%;
+    bottom: 0px;
+    left:0px;
   }
   
   .menu-container {
@@ -127,6 +129,7 @@
     display: flex;
     gap: 20px;
     list-style-type: none;
+    text-decoration: none;
   }
   
   .menu-links a {
@@ -136,6 +139,6 @@
   }
   
   .menu-links a:hover {
-    text-decoration: underline;
+    color: #ccc;
   }
   

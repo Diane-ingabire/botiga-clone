@@ -1,0 +1,98 @@
+/* Background overlay */
+.login-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Login form container */
+  .login-container {
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+  
+  /* Header */
+  .login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  /* Input container */
+  .input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 8px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 6px;
+  }
+  
+  /* Password toggle button */
+  .password-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  
+  /* Forgot password link */
+  .forgot-password {
+    color: #2563eb;
+    font-size: 14px;
+    margin-top: 8px;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Login button */
+  .login-button {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 16px;
+  }
+  
+  /* Terms and links */
+  .terms {
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .terms a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  /* Create account */
+  .create-account {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .create-account a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  

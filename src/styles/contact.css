@@ -1,0 +1,58 @@
+.map{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 8%;
+ 
+   height: 50%[];
+
+  
+}
+.contact_content{
+ display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+   
+}
+.left_contact{
+    flex: 1;
+    max-width:50%;
+
+}
+.right_contact{
+    flex: 2;
+    max-width: 50%;
+   
+}
+.textbox, .eml{
+    width: 40%;
+    height: 45px;
+    margin-bottom: 7%;
+}
+.eml{
+    width: 85%;
+}
+textarea{
+    width: 85%;
+    height:180px;
+    margin-bottom: 7%;
+} 
+.email button{
+    width: 20%;
+    height: 55px;
+    color: white;
+    background-color:  #0056b3;
+    margin-bottom: 7%;
+    border-radius: 10px;
+    border: none;
+}
+h2{
+    font-size: 250%;
+    margin-bottom: 7%;
+}  
+.right_contact .phone{
+    margin-bottom: 10%;
+    margin-top:7%;
+}

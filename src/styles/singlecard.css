@@ -1,0 +1,17 @@
+.single_contaijner{
+    display: flex;
+   
+}
+.Description{
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-top: 10%;
+    font-size: larger;
+}
+.right{
+    margin-top: 20px;
+   
+}
+img{
+    margin-bottom: 5%;
+}

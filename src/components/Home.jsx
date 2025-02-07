@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import "../styles/home.css"; 
 import firstimg from "../assets/firstimg.webp";
 import secondimg from "../assets/secondimg.webp";
@@ -17,8 +19,17 @@ import fourteenimg from "../assets/fourteenimg.webp";
 
 import { FaStar, FaCircle } from "react-icons/fa";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-
+export const products = [
+  { id:1,name: "All In One Bottle", price: "$22.00 - $55.00" ,image: sevenimg, rating: 3, colors: ["#8B7D6B", "#D9D9D9", "#FFFFFF"], Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim auctor quam nec dapibus. Etiam pulvinar lectus lorem, vel condimentum felis tincidunt eget. Curabitur sem nisl, porta rutrum molestie quis, blandit vitae nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."  },
+  { id:2, name: "Amazon Alexa", price: "$49.00 - $69.00", image: eightimg, rating: 5, colors: ["#BEB7A4", "#FFFFFF"],Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim auctor quam nec dapibus. Etiam pulvinar lectus lorem, vel condimentum felis tincidunt eget. Curabitur sem nisl, porta rutrum molestie quis, blandit vitae nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus." },
+  { id:3,name: "Headset Gamer Legion", price: "$22.00 - $55.00", image: nineimg, rating: 4, colors: ["#8B7D6B", "#D9D9D9", "#FFFFFF"],Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim auctor quam nec dapibus. Etiam pulvinar lectus lorem, vel condimentum felis tincidunt eget. Curabitur sem nisl, porta rutrum molestie quis, blandit vitae nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus." },
+];
 const Home = () => {
+  const navigate = useNavigate();
+  const handleNavigate = (id) =>{
+    navigate(`/singleitem/${id}`);
+  }
+  
   const categories = [
     { name: "Body Lotion", image: firstimg },
     { name: "Sports", image: secondimg },
@@ -28,11 +39,11 @@ const Home = () => {
     { name: "Women Clothes", image: sixthimg },
   ];
 
-  const products = [
-    { name: "All In One Bottle", price: "$22.00 - $55.00", image: sevenimg, rating: 3, colors: ["#8B7D6B", "#D9D9D9", "#FFFFFF"] },
-    { name: "Amazon Alexa", price: "$49.00 - $69.00", image: eightimg, rating: 5, colors: ["#BEB7A4", "#FFFFFF"] },
-    { name: "Headset Gamer Legion", price: "$22.00 - $55.00", image: nineimg, rating: 4, colors: ["#8B7D6B", "#D9D9D9", "#FFFFFF"] },
-  ];
+  // const products = [
+  //   { id:1,name: "All In One Bottle", price: "$22.00 - $55.00", link:'/card/1' ,image: sevenimg, rating: 3, colors: ["#8B7D6B", "#D9D9D9", "#FFFFFF"] },
+  //   { id:2, name: "Amazon Alexa", price: "$49.00 - $69.00", image: eightimg, rating: 5, colors: ["#BEB7A4", "#FFFFFF"] },
+  //   { id:3,name: "Headset Gamer Legion", price: "$22.00 - $55.00", image: nineimg, rating: 4, colors: ["#8B7D6B", "#D9D9D9", "#FFFFFF"] },
+  // ];
 
   const vendors = [
     { name: "Santa Monica's Store", location: "New York, NY", image: tenthimg},
@@ -45,6 +56,7 @@ const Home = () => {
     { name: "Josh Doe's Store", location: "New York, NY", image: fourteenimg },
     { name: "Digital Good's Store", location: "New York, NY", image: twelveimg },
   ];
+
 
   return (
     <div className="Home">
@@ -79,6 +91,9 @@ const Home = () => {
           <div key={index}>
             <img src={item.image} alt={item.name} style={{ width: "160px", height: "160px", padding: "1%", margin: "1%" }} />
             <h3>{item.name}</h3>
+            <div className="Description">
+              {item.Description}
+            </div>
           </div>
         ))}
       </div>
@@ -89,6 +104,10 @@ const Home = () => {
         {products.map((product, index) => (
           <div key={index} className="product_card">
             <img src={product.image} alt={product.name} />
+            <Link to={`/singleitem/${product.id}`} 
+            key={product.id}  >
+            <button className="quick_view" onClick={()=>handleNavigate(product.id)}>Quick View</button>
+            </Link>
             <h3>{product.name}</h3>
             <p>{product.price}</p>
 

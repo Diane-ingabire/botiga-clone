@@ -56,7 +56,7 @@ const Vendors = () => {
                            <h3>{myshop.name}</h3>
                             <div className="stars">
                                 {[...Array(5)].map((_, i) => (
-                                    <FaStar key={i} color={i < myshop.rate ? "#ffa441" : "#dddddd"} />
+                                    <FaStar className="micon" key={i} color={i < myshop.rate ? "#ffa441" : "#dddddd"} />
                                 ))}
                             </div>
                             <p>{myshop.city}</p>
@@ -64,7 +64,7 @@ const Vendors = () => {
                             <p>{myshop.city} {myshop.country}</p>
                            </div>
                            <br/><br/>
-                           <IoIosArrowDroprightCircle className="myicon"/>
+                           <IoIosArrowDroprightCircle className="micon"/>
                         </div>
                         
                     ))}

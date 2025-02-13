@@ -11,7 +11,8 @@ function Singlecard() {
         <div className="single_contaijner">
             <img src={product.image} alt={product.name} />
             <div className="right"><h2>{product.name}</h2>
-            <div className="Description"><p>{product.Description}</p></div>
+            <div className="Description"><p>{product.Description}</p></div><br/><br/><br/>
+            <div className="vendor-btn"> <button>Buy now</button></div>
             </div>
             
             <div></div>

@@ -77,4 +77,13 @@
 .myicon{
    color:#5a54f4;
     font-size: 30px;
+    
+}
+.vendor-btn button{
+    width: 20%;
+    height: 50px;
+    background-color:#5a54f4; 
+    border-radius: 20px;
+    color: white;
+    border: none;
 }

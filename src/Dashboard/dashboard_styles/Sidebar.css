@@ -12,6 +12,48 @@
  
   
 }
+.submenu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.item a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 8px;
+}
+
+.item::before {
+  content: "●";
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+
+.ai::before { color: blue; }
+.crm::before { color: gray; }
+.ecommerce::before { color: blue; }
+.cryptocurrency::before { color:gray; }
+.investment::before { color: blue; }
+.lms::before { color: gray; }
+
+
+.item:hover {
+  border-left-color: #007bff;
+  background: rgba(0, 123, 255, 0.1);
+}
+
 
 .logo_header {
   border-bottom: 1px solid gainsboro;
@@ -81,7 +123,12 @@
   background-color: #5956e9;
   color: white;
 }
-
+.menu-item li:hover{
+  color: white;
+}
 .downapp {
   margin-top: 20px;
+}
+.myicon{
+  flex:1;
 }

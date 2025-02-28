@@ -1,0 +1,97 @@
+.emaile-sidebar {
+    width: 950px;
+    height: 100vh;
+    background-color:white;
+    padding: 16px;
+    margin-left: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .headere {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .headere h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .breadcrumbe {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .compose-btne {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  
+  .compose-btne:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .nav-menue {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .menu-iteme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .menu-iteme:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .menu-iteme.active {
+    background-color: #eff6ff;
+  }
+  
+  .menu-iteme-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .count {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .spame {
+    color: #dc2626;
+  }
+  
+  .tags-sectione {
+    margin-top: 24px;
+    padding: 0 16px;
+  }
+  
+  .tags-sectione h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin: 0;
+  }

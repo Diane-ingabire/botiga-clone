@@ -21,20 +21,24 @@ const Sidebar = () => {
         onClick={() => setIsOverviewDropdownOpen(!isOverviewDropdownOpen)}
         className="dropdown-toggle1"
       >
-        <AiOutlineHome /> Dashboard
+       <AiOutlineHome /> Dashboard 
       </div>
 
       {isOverviewDropdownOpen && (
-        <div className="submenu">
-          <div><Link to="/overview/sales-summary">Sales Summary</Link></div>
-          <div><Link to="/overview/recent-orders">Recent Orders</Link></div>
-          <div><Link to="/overview/revenue-graph">Revenue Graph</Link></div>
-          <div><Link to="/overview/top-selling-products">Top Selling Products</Link></div>
-        </div>
+  <div className="submenu">
+  <div className="item ai"><Link to="/dashboard">OverView</Link></div>
+  <div className="item crm"><Link to="/Orders">Orders</Link></div>
+  <div className="item ecommerce"><Link to="/Sales_Summary">Sales Summary</Link></div>
+  <div className="item cryptocurrency"><Link to="/Topselling">Top Selling Products</Link></div>
+  <div className="item investment"><Link to="/category/investment">Investment</Link></div>
+
+</div>
+
+     
       )}
 
       <p className="menu-heading">Application</p>
-      <div className="menu-item"><MdOutlineBorderColor /><Link to="/orders" className="mylink">Orders</Link></div>
+      <div className="menu-item"><MdOutlineBorderColor /><Link to="/ProductManagement" className="mylink">Manage Products</Link></div>
       <div className="menu-item"><FaShoppingCart /><Link to="/vendors" className="mylink">Vendors</Link></div>
 
       <div
@@ -52,7 +56,7 @@ const Sidebar = () => {
       )}
 
       <div className="downapp">
-        <div className="menu-item"><AiOutlineMail /> <Link to="/email" className="mylink">Email</Link></div>
+        <div className="menu-item"><AiOutlineMail /> <Link to="/Email" className="mylink">Email</Link></div>
         <div className="menu-item"><IoChatbubbleEllipsesOutline /><Link to="/messages" className="mylink">Messages</Link></div>
         <div className="menu-item"><CiSettings /><Link to="/settings" className="mylink">Settings</Link></div>
       </div>

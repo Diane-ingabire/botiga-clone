@@ -132,3 +132,46 @@
   .table-container h2{
     margin-top: 20px;
   }
+ /* General styles for dark mode */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Navbar styles */
+.dark-mode .dashnavbar {
+  background-color: #222;
+  color: white;
+}
+
+/* Sidebar styles */
+.dark-mode .sidebar {
+  background-color: #222;
+  color: white;
+}
+
+.dark-mode .sidebar a {
+  color: white;
+}
+
+.dark-mode .sidebar a:hover {
+  background-color: #333;
+}
+
+/* Search bar */
+.dark-mode .search-container input {
+  background-color: #333;
+  color: white;
+}
+
+/* Dropdown menus */
+.dark-mode .dropdown-menu {
+  background-color: #333;
+  color: white;
+}
+
+/* Main content area */
+.dark-mode .content {
+  background-color: #1a1a1a;
+  color: white;
+}

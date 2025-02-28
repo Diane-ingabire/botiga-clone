@@ -17,10 +17,11 @@ import  Contactform from './components/Contactform'
 import DashboardLayout from './Dashboard/DashboardLayout'
 
 import DashboardView from './Dashboard/DashboardView'
-
-// import UsestateHook from './components/UsestateHook'
-
-
+import Email from './Dashboard/Email'
+import Topselling from './Dashboard/Topselling'
+import  Sales_Summary from './Dashboard/Sales_Summary'
+import ProductManagement from './Dashboard/ProductManagement'
+import Orders from './Dashboard/Orders'
 
 
 function App() {
@@ -39,13 +40,18 @@ function App() {
           <Route path='Contactform'  element={<Contactform/>}/>
        
           <Route path= 'singleitem/:id' element={<Singlecard/>}/>
-          {/* <Route path='UsestateHook'  element={<UsestateHook/>}/> */}
+         
           
 
           
         </Route>
         <Route path='/' element={<DashboardLayout/>}>
         <Route path='/dashboard' index element={<DashboardView/>}/>
+        <Route path='/Topselling' element={< Topselling/>}/>
+        <Route path='/Email' element={<Email/>}/>
+        <Route path='/Sales_Summary' element={<Sales_Summary/>}/>
+        <Route path='/ProductManagement' element={<ProductManagement/>}/>
+        <Route path='/Orders' element={<Orders/>}/>
         
         </Route>
       

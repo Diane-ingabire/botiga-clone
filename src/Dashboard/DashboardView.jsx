@@ -1,142 +1,259 @@
 import React, { PureComponent } from "react";
+import { FaStoreAlt } from "react-icons/fa";
+import { MdOutlineBorderColor } from "react-icons/md";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { BsPeopleFill } from "react-icons/bs";
 import {
   LineChart,
   Line,
   BarChart,
   Bar,
+  PieChart,
+  Pie,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
   Legend,
-  ResponsiveContainer,
+  ResponsiveContainer
 } from "recharts";
-import user from "../assets/user.png"
+
+import user from "../assets/user.png";
+
 import "./dashboard_styles/DashboardView.css";
 
-const data = [
-  { name: "Page A", uv: 4000, pv: 2400, amt: 2400 },
-  { name: "Page B", uv: 3000, pv: 1398, amt: 2210 },
-  { name: "Page C", uv: 2000, pv: 9800, amt: 2290 },
-  { name: "Page D", uv: 2780, pv: 3908, amt: 2000 },
-  { name: "Page E", uv: 1890, pv: 4800, amt: 2181 },
-  { name: "Page F", uv: 2390, pv: 3800, amt: 2500 },
-  { name: "Page G", uv: 3490, pv: 4300, amt: 2100 },
+
+const cardsData = [
+  {
+    id: 1,
+    title: " Sales",
+    description: "Building scalable web applications.",
+    image: "https://via.placeholder.com/150",
+    color: "#DFEEF4",
+    icon:<FaStoreAlt />,
+  },
+  {
+    id: 2,
+    title: "Orders",
+    description: "Creating user-friendly interfaces.",
+    image: "https://via.placeholder.com/150",
+    color: "#BEEDEE",
+    icon: <MdOutlineBorderColor />,
+  },
+  {
+    id: 3,
+    title: "Customers",
+    description: "Tracking and optimizing performance.",
+    image: "https://via.placeholder.com/150",
+    color: "#C0E0F2",
+    icon: <FaPeopleGroup />,
+  },
+  {
+    id: 4,
+    title: "Vendors",
+    description: "Configuring and customizing systems.",
+    image: "https://via.placeholder.com/150",
+    color: "#9BD5EF",
+    icon: <BsPeopleFill />,
+  },
 ];
 
-class CustomizedLabel extends PureComponent {
-  render() {
-    const { x, y, stroke, value } = this.props;
-    return (
-      <text x={x} y={y} dy={-10} fill={stroke} fontSize={12} textAnchor="middle">
-        {value}
-      </text>
-    );
-  }
-}
 
-class CustomizedAxisTick extends PureComponent {
-  render() {
-    const { x, y, payload } = this.props;
-    return (
-      <g transform={`translate(${x},${y})`}>
-        <text x={0} y={0} dy={16} textAnchor="middle" fill="#666">
-          {payload.value}
-        </text>
-      </g>
-    );
+const salesData = [
+  { name: "Week 1", sales: 10000 },
+  { name: "Week 2", sales: 15000 },
+  { name: "Week 3", sales: 12000 },
+  { name: "Week 4", sales: 18000 }
+];
+
+const bestSellingProducts = [
+  { name: "Electronics", sales: 120 },
+  { name: "Fashion", sales: 95 },
+  { name: "Body lotion", sales: 75 },
+  { name: "Shoes", sales: 60 }
+];
+
+
+const paymentHistoryData = [
+  {
+    id: 1,
+    user: "Dianne Russell",
+    image: user,
+    email: "osgoodwy@gmail.com",
+    transactionId: "9562415412263",
+    amount: "$29.00",
+    paymentMethod: "Bank",
+    date: "24 Jun 2024",
+    status: "Pending"
+  },
+  {
+    id: 2,
+    user: "Wade Warren",
+    image: user,
+    email: "redaniel@gmail.com",
+    transactionId: "9562415412263",
+    amount: "$29.00",
+    paymentMethod: "Bank",
+    date: "24 Jun 2024",
+    status: "Active"
+  },
+  {
+    id: 3,
+    user: "Albert Flores",
+    image: user,
+    email: "seema@gmail.com",
+    transactionId: "9562415412263",
+    amount: "$29.00",
+    paymentMethod: "Bank",
+    date: "24 Jun 2024",
+    status: "Active"
+  },
+  {
+    id: 4,
+    user: "Bessie Cooper",
+    image: user,
+    email: "hamli@gmail.com",
+    transactionId: "9562415412263",
+    amount: "$29.00",
+    paymentMethod: "Bank",
+    date: "24 Jun 2024",
+    status: "Active"
+  },
+  {
+    id: 5,
+    user: "Arlene McCoy",
+    image: user,
+    email: "zitka@mail.ru",
+    transactionId: "9562415412263",
+    amount: "$29.00",
+    paymentMethod: "Cash",
+    date: "24 Jun 2024",
+    status: "pending"
   }
-}
+];
+
 
 export default class DashboardView extends PureComponent {
   render() {
     return (
       <div className="dashboard-container">
         <h1>Dashboard</h1>
-
-        {/* Cards Section */}
         <div className="cards-container">
-          <div className="card">
-            <h3>Total Sales</h3>
-            <p>50,000</p>
+      {cardsData.map((card) => (
+        <div className="card" key={card.id} style={{ backgroundColor: card.color }}>
+          <div className="micon">{card.icon}<br/>
+          <button>View More</button>
           </div>
-          <div className="card">
-            <h3>Orders</h3>
-            <p>1,245</p>
+          <div className="mword">
+          <h3>{card.title}</h3>
+          <p>{card.description}</p>
           </div>
-          <div className="card">
-            <h3>Active Users</h3>
-            <p>785</p>
-          </div>
-          <div className="card">
-            <h3>Revenue</h3>
-            <p>$120,000</p>
-          </div>
+         
+          
         </div>
-
-        <div className="chart-container">
-          <h2>Overview</h2>
-          <ResponsiveContainer width="100%" height={400}>
-            <LineChart data={data} margin={{ top: 40, right: 30, left: 50, bottom: 40 }}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" height={50} tick={<CustomizedAxisTick />} />
-              <YAxis />
-              <Tooltip />
-              <Legend />
-              <Line type="monotone" dataKey="pv" stroke="#8884d8" label={<CustomizedLabel />} />
-              <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-            </LineChart>
-          </ResponsiveContainer>
-        </div>
-
-        <div className="chart-container">
-          <h2>Sales</h2>
-          <ResponsiveContainer width="50%" height={400}>
-            <BarChart data={data}>
+      ))}
+    </div>
+            <div className="middleView">
+            <div className="chart-container-view1">
+            <h2>Sales Trends</h2>
+          <select className="view_selectbox">
+            <option>Today</option>
+            <option>Weekly</option>
+            <option>Monthly</option>
+            <option>Yearly</option>
+          </select>
+          <ResponsiveContainer width="70%" height={250}>
+            <LineChart data={salesData}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar dataKey="uv" fill="#5a54f4" />
-              <Bar dataKey="pv" fill="#808080" />
+              <Line type="monotone" dataKey="sales" stroke="#8884d8" />
+            </LineChart>
+          </ResponsiveContainer>
+
+         
+
+
+        </div>
+           <div className="right_sideview">
+           <div className="right_sideview_up">
+            <h2>Revenue</h2>
+           </div>
+           <div className="right_sideview_down">
+           <p>$500,000</p>
+           </div>
+           </div>
+
+           
+
+            </div>
+
+            
+
+
+        <div className="table-container">
+  <div className="table-header">
+    <h2>Payment History</h2>
+    <a href="#" className="view-all">View All</a>
+  </div>
+  <table className="payment-table">
+    <thead>
+      <tr>
+        <th>Users</th>
+        <th>Email</th>
+        <th>Transaction ID</th>
+        <th>Amount</th>
+        <th>Payment Method</th>
+        <th>Date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {paymentHistoryData.map((payment) => (
+        <tr key={payment.id}>
+          <td className="user-cell">
+            <div className="user-info">
+            <img src={payment.image} alt={payment.user} className="product-image" />
+              <span>{payment.user}</span>
+            </div>
+          </td>
+          <td>{payment.email}</td>
+          <td>{payment.transactionId}</td>
+          <td>{payment.amount}</td>
+          <td>{payment.paymentMethod}</td>
+          <td>{payment.date}</td>
+          <td>
+            <span className={`status-badge ${payment.status.toLowerCase()}`}>
+              {payment.status}
+            </span>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+    
+<div className="chart-container-view2">
+          <h2>Best-Selling Products</h2>
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={bestSellingProducts}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              <Bar dataKey="sales" fill="#5a54f4" />
             </BarChart>
           </ResponsiveContainer>
         </div>
 
-        
-        <div className="table-container">
-        <h2>Latest Vendor</h2>
-          <table className="chart-container">
-          
-            <thead>
-              <tr>
-                <th>User</th>
-                <th>Registered On</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td> <span><img src={user}/></span>John Doe</td>
-                <td>2025-02-10</td>
-                <td>Active</td>
-              </tr>
-              <tr>
-                <td><span><img src={user}/></span>Jane Smith</td>
-                <td>2025-02-09</td>
-                <td>Expired</td>
-              </tr>
-              <tr>
-                <td><span><img src={user}/></span>Alex Brown</td>
-                <td>2025-02-08</td>
-                <td>Active</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      
+
+       
       </div>
     );
   }
 }
-

@@ -1,0 +1,139 @@
+/* Orders Dashboard Container */
+.orders-dashboard-container {
+    width: 80%;
+    margin-left:250px;
+    padding: 20px;
+    /* display: flex;
+    flex-direction: row; */
+   
+}
+
+/* Orders Summary Cards */
+.orders-cards-container{
+    display: flex;
+    justify-content: space-between;
+   /* Reduced gap for better spacing */
+    margin-bottom: 20px;
+   
+    width: 1000px;
+    margin-left: 50px;
+    margin-top: 100px; /* Reduced top margin to prevent overlap */
+}
+
+.orders-card {
+   display: flex;
+   gap: 100px;
+    padding: 3px; 
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.orders-total-orders {
+    background: #2980b9; /* Adjusted color for better visibility */
+    border-radius: 20px;
+    width: 180px;
+}
+
+.orders-cancelled-orders {
+    background: #c0392b; /* Adjusted color for better visibility */
+    border-radius: 20px;
+    width: 180px;
+}
+
+.orders-pending-orders {
+    background: #f39c12; /* Adjusted color for better visibility */
+    color: black;
+    border-radius: 20px;
+    width: 180px;
+}
+
+.orders-delivered-orders {
+    background: #27ae60; /* Adjusted color for better visibility */
+    border-radius: 20px;
+     width: 180px;
+}
+
+/* Orders Filter Container */
+.orders-filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.orders-filter-container label {
+    margin-right: 20px;
+}
+
+/* Orders Table */
+.orders-table-container{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 1000px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.orders-table th {
+    background: #f4f4f4;
+}
+
+/* Orders Status Styling */
+.orders-status {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.orders-status.orders-shipped {
+    color: green;
+}
+
+.orders-status.orders-pending {
+    color: orange;
+}
+
+.orders-status.orders-delivered {
+    color: blue;
+}
+
+.orders-status.orders-cancelled {
+    color: red;
+}
+
+/* Orders Table Buttons */
+.orders-btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.orders-btn.orders-details-btn {
+    background: #3498db;
+    color: white;
+}
+
+.orders-btn.orders-delete-btn {
+    background: #e74c3c;
+    color: white;
+}

@@ -1,0 +1,72 @@
+.table-container_sales {
+    margin-top: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 200px;
+  }
+
+ .table-container_sales h2{
+  margin-left: 200px;
+  margin-top: 200px;
+  width: 10%;
+
+
+ } 
+ .sales_table{
+    width: 80%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 100px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color:grey;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #e6f7ff;
+  }
+  
+  .product-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  td:first-child {
+    display: flex;
+    align-items: center;
+  }
+  
+  .category {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .total-orders {
+    
+    color: #5956e9;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
